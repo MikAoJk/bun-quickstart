@@ -1,7 +1,10 @@
 {
   "name": "bun-quickstart",
-  "module": "index.ts",
+  "module": "index.tsx",
   "type": "module",
+  "scripts": {
+    "build": "bun build --target bun src/index.tsx --compile --outfile .build/index.ts"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
